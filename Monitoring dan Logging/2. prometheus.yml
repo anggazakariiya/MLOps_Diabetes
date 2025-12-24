@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'monitoring_diabetes_angga'
+    static_configs:
+      # host.docker.internal = cara Docker container ngobrol sama laptopmu
+      - targets: ['host.docker.internal:8000']
